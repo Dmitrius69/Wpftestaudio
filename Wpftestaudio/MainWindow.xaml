@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpftestaudio"
+        xmlns:WPFSoundVisualizationLib="clr-namespace:WPFSoundVisualizationLib;assembly=WPFSoundVisualizationLib" x:Class="Wpftestaudio.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <WPFSoundVisualizationLib:WaveformTimeline HorizontalAlignment="Left" Height="13" Margin="800,-15,-34,0" VerticalAlignment="Top" Width="26"/>
+        <WPFSoundVisualizationLib:DigitalClock Margin="670,89,10,0" VerticalAlignment="Top" Height="37"/>
+        <WPFSoundVisualizationLib:WaveformTimeline Margin="10,55,127,0" VerticalAlignment="Top" Height="117"/>
+        <WPFSoundVisualizationLib:SpectrumAnalyzer HorizontalAlignment="Right" Margin="0,188,127,64" Width="655" RenderTransformOrigin="0.51,0.52"/>
+        <WPFSoundVisualizationLib:TimeEditor HorizontalAlignment="Left" Margin="421,360,0,35"/>
+        <Button x:Name="openfile" Content="Открыть" Margin="10,27,707,0" VerticalAlignment="Top" Click="Opensound_Click"/>
+        <Button x:Name="play_butt" Content="Играть" Margin="690,141,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92"/>
+        <Button x:Name="pause_butt" Content="Пауза" Margin="690,182,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92"/>
+        <Button x:Name="stop_butt" Content="Стоп" Margin="690,228,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92"/>
+        <TextBox x:Name="FileText" Height="23" Margin="90,27,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <WPFSoundVisualizationLib:TimeEditor HorizontalAlignment="Left" Margin="579,360,0,35"/>
+
+    </Grid>
+</Window>
